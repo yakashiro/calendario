@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/calendario.js"></script>
+
+<style type="text/css">
+.itenFecha{ min-width:23em; z-index:100;}
+.itenFechaTitulo select{ border:none; box-shadow:none; }
+.itenFecha{ border:2px solid #ccc;}
+.itenFechaTitulo{ border-bottom:1px solid #ccc;}
+
+</style>
+
+<script type="text/javascript">
+$(function(){
+	
+	$(".has_fecha").calendario();
+	
+	});
+</script>
+</head>
+
+<body>
+
+<input type="text" class="has_fecha">
+<input type="text" value="1/12/2013" class="has_fecha">
+<input type="text" class="has_fecha">
+<input type="text" value="31/08/2014" class="has_fecha">
+
+
+</body>
+</html>
